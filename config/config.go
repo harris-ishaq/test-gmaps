@@ -7,8 +7,6 @@ import (
 var (
 	// HOSTNAME current hostname
 	HOSTNAME, _ = os.Hostname()
-)
-
-var (
-	GMAPS_API = "AIzaSyDQYavEeONw69aOFzYOe2l7XZlPnNnY7vE"
+	// GMAPS API Key
+	GMAPS_API = os.Getenv("GMAPS_API")
 )
